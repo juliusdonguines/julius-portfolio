@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <title>Julius Portfolio</title>
+  </head>
+
+  <body>
+    <div class="containers">
+      <div class="header">
+        <div id="logo">
+          <h1 class="title">Portfolio</h1>
+        </div>
+        <div class="navigation">
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#cont">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-cont">
+          <nav class="nav-menu">
+            <button class="menu" id="menu" onclick="show()">
+              <i class="ai-text-align-justified menu-text"></i>
+            </button>
+          </nav>
+          <div class="links" id="links">
+            <ul>
+              <li><a href="#" onclick="show()">Home</a></li>
+              <hr />
+              <li><a href="#about" onclick="show()">About</a></li>
+              <hr />
+              <li><a href="#cont" onclick="show()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section id="#">
+        <div class="home">
+          <h1>Hello! My name is julius.</h1>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="imgs">
+          <img src="./juls2.webp" alt="" />
+        </div>
+        <div id="about-info">
+          <h2>About Me</h2>
+          <p>
+            I would like to introduce myself as Julius Donguines, a student
+            currently enrolled in the Information Technology program at Laguna
+            State Polytechnic University (LSPU). I reside in Calamba, Laguna,
+            specifically in Brgy Bañadero. I am 20 years old and the youngest
+            member of my family.
+          </p>
+          <p></p>
+        </div>
+        <div id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>• Free diver</li>
+            <li>• Basketball</li>
+            <li>• Hiking</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="cont">
+        <div class="bg-img2">
+          <h1>Contacts</h1>
+          <div class="cards">
+            <div class="btn">
+              <a
+                href="https://web.facebook.com/julius.donguines.92?mibextid=ZbWKwL&_rdc=1&_rdr"
+              >
+                <button type="button">Facebook</button>
+              </a>
+              <div class="number">Contact Number: 09166923071</div>
+            </div>
+            <div class="btn">
+              <a
+                href="https://www.instagram.com/looneyius/?igsh=ZHB4aGd5aXJ4YTY%3D"
+              >
+                <button type="button">Instagram</button>
+              </a>
+              <div class="number">juliusdonguines2018@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ending">
+        <div class="text">
+          <h1>Thank you</h1>
+          <p>for your visit</p>
+        </div>
+      </section>
+
+      <footer>
+        <h2>Julius Donguines BSIT-2D</h2>
+      </footer>
+    </div>
+  </body>
+
+  <script>
+    const links = document.getElementById("links");
+    const menu = document.getElementById("menu");
+
+    function show() {
+      if (links.style.display === "block") {
+        links.style.display = "none";
+      } else {
+        links.style.display = "block";
+      }
+    }
+  </script>
+</html>
